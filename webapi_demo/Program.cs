@@ -30,6 +30,12 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+// for show all map form controllers
 app.MapControllers();
+
+//custom route for mapping specific controller
+// app.MapControllerRoute(
+//     name: "default",
+//     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
